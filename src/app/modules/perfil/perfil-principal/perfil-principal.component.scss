@@ -1,0 +1,225 @@
+/* @import "~compass-mixins/lib/compass/css3"; */
+$bg-page: #fff;
+/* $bg-cover: url('https://static.pexels.com/photos/93013/pexels-photo-93013-large.jpeg'); */
+$bg-cover-opacity: linear-gradient(#3e8918d4, #019321e3, #00c906);
+$bg-content: #FAF7F3;
+$shadow-box: 0px 0px 200px rgba(0, 0, 0, .4);
+$border-img: 2px solid rgba(120, 128, 141, .5);
+// message
+$bg-chat: #9BC1BF;
+$message-color: #FAF7F3;
+
+// 
+$icons-color: #78808D;
+
+//
+$font-ubuntu: 'Ubuntu', sans-serif;
+$color-white: rgb(0, 0, 0);
+$color-silver: rgb(0, 0, 0);
+$color-name-message: rgb(2, 2, 2);
+$color-text-message: rgba(0, 0, 0, 0.7);
+$size-title: 1.8em;
+$size-subtitle: 1.5em;
+$size-normal: 10px;
+$size-small: 1.2em;
+
+.container {
+    background: $bg-page;
+}
+
+.content {
+    background: $bg-content;
+    width: 320px;
+    height: 590px;
+    margin: 2% auto;
+    border-radius: 10px;
+    box-shadow: $shadow-box;
+    overflow: hidden;
+}
+
+header#cover-page {
+    width: 100%;
+    height: 255px;
+    position: relative;
+
+    .bg-cover-opacity {
+        background: $bg-cover-opacity;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: .5;
+        position: absolute;
+        z-index: 50;
+    }
+
+    .informations {
+        width: 100%;
+        height: 60px;
+    }
+
+}
+
+.name {
+    font-size: $size-title;
+    font-family: $font-ubuntu;
+    color: $color-white;
+    text-align: center;
+    margin: 1%;
+}
+
+
+
+
+
+.slogan {
+    font-size: $size-small;
+    font-family: $font-ubuntu;
+    color: $color-silver;
+    text-align: center;
+    margin: 0%;
+}
+
+.slogan {
+    span {
+        top: 13px;
+        left: -20px;
+        fill: white;
+        position: relative;
+        display: block;
+    }
+
+}
+
+
+
+
+img.perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    left: 100px;
+    box-shadow: 0px 0px 15px rgba(120, 128, 141, 1);
+    z-index: 100;
+    position: relative;
+}
+
+.notification {
+    width: 100%;
+    height: 50px;
+
+    .icon {
+        width: 25%;
+        height: 50px;
+        text-align: center;
+        float: left;
+        fill: $icons-color;
+
+        svg {
+            margin-top: 10%;
+        }
+
+    }
+
+    .selected {
+        background: rgba(122, 171, 174, .1)
+    }
+
+}
+
+.messages {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 245px;
+    padding-top: 8%;
+    display: block;
+
+    .history-message {
+        width: 90%;
+        height: 70px;
+        margin: 2% 5%;
+        border-bottom: 1px solid rgba(120, 128, 141, .2);
+        position: relative;
+
+        .pic-message {
+            width: 60px;
+            height: 60px;
+            margin: 0 3%;
+            border-radius: 50%;
+            float: left;
+        }
+
+        h4 {
+            font-size: $size-normal;
+            font-family: $font-ubuntu;
+            color: $color-name-message;
+            top: 10%;
+            position: relative;
+        }
+    }
+
+}
+
+.row {
+    text-align: center;
+    margin: 0% auto auto 35px;
+}
+
+
+span {
+    border: none;
+    max-width: 100px;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #053b07;
+}
+
+input[type="text"][type="email"],
+input[type="text"]:focus,
+input[type="email"]:focus {
+    background: transparent;
+    outline-width: 0;
+}
+
+textarea{
+    border: none;
+    border-bottom: 1px solid #053b07;
+}
+
+textarea,
+textarea:focus {
+    background: transparent;
+    outline-width: 0;
+}
+
+.footer-img{
+    width: 25px;
+    height: 25px;
+}
+
+.footer-img2{
+    width: 35px;
+    height: 35px;
+}
+
+a{
+    margin: auto 5px auto;
+}
+.footer-img4{
+    width: 45px;
+    height: 45px;
+   
+}
+
+.posicion{
+    float: right;
+    margin: -50px auto auto auto;
+}
+
