@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PerfilPrincipalComponent } from "./perfil-principal/perfil-principal.component";
 const routes: Routes = [
   {
-    path: 'principal',
+    path: '',
     component: PerfilPrincipalComponent
   }
 ];

@@ -7,7 +7,7 @@ import { PerfilPrincipalComponent } from './modules/perfil/perfil-principal/perf
 const routes: Routes = [
   {
     path:'',
-    redirectTo:'perfil/principal',
+    redirectTo:'/perfil',
     pathMatch: 'full'
   },
   {
@@ -15,11 +15,11 @@ const routes: Routes = [
     component:PerfilPrincipalComponent,
      children:[
       {
-        path:'principal',
+        path:'',
         loadChildren: () =>
           import('./modules/perfil/perfil.module').then((m) => m.PerfilModule)
       }
-    ]
+    ] 
   }
 ];
 
