@@ -11,11 +11,11 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path:'',
+    path:'perfil',
     component:PerfilPrincipalComponent,
-    children:[
+     children:[
       {
-        path:'perfil',
+        path:'principal',
         loadChildren: () =>
           import('./modules/perfil/perfil.module').then((m) => m.PerfilModule)
       }

@@ -1,11 +1,11 @@
 const express = require('express');
-
+const path = require('path')
 const app = require();
 
-app.use(express.static(__dirname+'/dist/perfil-angular'));
+app.use(express.static('./dist/perfil-angular'));
  
 app.get('/*',(req,res)=>{
-    res.sendFile(__dirname+'/dist/perfil-angular/index.html');
+    res.sendFile('index.html',{root:'/dist/perfil-angular/'});
 });
 
 app.listen(process.env.PORT || 8080);
